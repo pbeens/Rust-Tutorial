@@ -17,6 +17,13 @@ fn main() {
 
 If you're curious, you can also explore how "Hello, world!" looks in other programming languages. [[https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)]](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
 
+### ✏️ Exercise: Customize Your Greeting
+
+Modify the program to print a personalized message instead of the default greeting. Try changing the string to greet yourself or someone else.
+
+[Solve this exercise](../exercises/getting-started/01_customize_hello.rs)
+
+
 ## 2. Printing a String Stored in a Variable
 
 🆕 This is the first time we're using a **variable** in Rust.
@@ -60,6 +67,12 @@ fn main() {
 
 🆕 This is the first example in the guide that uses **inline comments** (starting with `//`) to annotate the code. Comments will be used throughout the guide to explain syntax choices, version compatibility, and behaviors directly within the code samples.
 
+### ✏️ Exercise: Store and Print a Custom Message
+
+Update the `message` variable to contain a phrase of your choice. Then use both the traditional (`{}`) and shorthand (`{message}`) print styles to display it.
+
+[Solve this exercise](../exercises/getting-started/02_variable_greeting.rs)
+
 ## 3. Asking for Your Name and Printing It
 
 🆕 This is the first time we’re introducing **user input** in Rust.
@@ -77,10 +90,12 @@ fn main() {
         .read_line(&mut name)
         .expect("Failed to read line");
 
-    println!("Hello, {}!", name.trim());
+    let name = name.trim();
+
+    println!("Hello, {}!", name);
 }
 ```
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=use+std%3A%3Aio%3B%0D%0A%0D%0Afn+main%28%29+%7B%0D%0A++++println%21%28%22What+is+your+name%3F%22%29%3B%0D%0A%0D%0A++++let+mut+name+%3D+String%3A%3Anew%28%29%3B%0D%0A++++io%3A%3Astdin%28%29%0D%0A++++++++.read_line%28%26mut+name%29%0D%0A++++++++.expect%28%22Failed+to+read+line%22%29%3B%0D%0A%0D%0A++++println%21%28%22Hello%2C+%7B%7D%21%22%2C+name.trim%28%29%29%3B%0D%0A%7D)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=407a04b6da4238c4068ae063af793a90)
 
 🆕 This is the first time we’ve used an **import** in Rust, which is done using the `use` keyword:
 
@@ -128,9 +143,37 @@ println!("Hello, {}!", name.trim());
 
 Altogether, this block safely and explicitly captures user input and displays a greeting.
 
+### ✏️ Exercise: Prompt and Personalize
+
+Ask for the user's name, then print a custom sentence like "It's great to meet you, Alice!". Use `.trim()` to clean the input.
+
+[Solve this exercise](../exercises/getting-started/03_prompt_personalized.rs)
+
+
 ## 4. Asking for First and Last Name and Printing Them
 
 In this example, we prompt the user to enter their first and last name separately and store each input in its own variable.
+
+```rust
+use std::io;
+
+fn main() {
+    let mut fname = String::new();
+    let mut lname = String::new();
+
+    println!("Enter your first name:");
+    io::stdin()
+        .read_line(&mut fname)
+        .expect("Failed to read line");
+
+    println!("Enter your last name:");
+    io::stdin()
+        .read_line(&mut lname)
+        .expect("Failed to read line");
+
+    println!("Hello, {} {}!", fname.trim(), lname.trim());
+}
+```
 
 🆕 This is the first time we're inserting multiple values into a single output using **multiple placeholders** in the `println!` macro. Each `{}` acts as a slot for a value. The values are passed as arguments to the macro in order:
 
@@ -140,7 +183,13 @@ println!("Hello, {} {}!", fname.trim(), lname.trim());
 
 The `.trim()` method removes the newline characters included by `read_line()` so that the names display cleanly.
 
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=use+std%3A%3Aio%3B%0D%0A%0D%0Afn+main%28%29+%7B%0D%0A++++let+mut+fname+%3D+String%3A%3Anew%28%29%3B%0D%0A++++let+mut+lname+%3D+String%3A%3Anew%28%29%3B%0D%0A%0D%0A++++println%21%28%22Enter+your+first+name%3A%22%29%3B%0D%0A++++io%3A%3Astdin%28%29%0D%0A++++++++.read_line%28%26mut+fname%29%0D%0A++++++++.expect%28%22Failed+to+read+line%22%29%3B%0D%0A%0D%0A++++println%21%28%22Enter+your+last+name%3A%22%29%3B%0D%0A++++io%3A%3Astdin%28%29%0D%0A++++++++.read_line%28%26mut+lname%29%0D%0A++++++++.expect%28%22Failed+to+read+line%22%29%3B%0D%0A%0D%0A++++println%21%28%22Hello%2C+%7B%7D+%7B%7D%21%22%2C+fname.trim%28%29%2C+lname.trim%28%29%29%3B%0D%0A%7D)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=e796a9bc9e5735d128185449db6f1151)
+
+### ✏️ Exercise: Full Name Flex
+
+Extend the example to ask for a middle name, or experiment with printing the name in last-name-first format (e.g., "Smith, John").
+
+[Solve this exercise](../exercises/getting-started/04_full_name_flex.rs)
 
 ## 5. Formatting Numbers and Strings
 
@@ -153,7 +202,7 @@ println!("Pi to two decimals: {:.2}", pi);
 
 This is equivalent to Python’s `f"{pi:.2f}"`.
 
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+main%28%29+%7B%0A++++let+pi+%3D+3.14159%3B%0A++++println%21%28%22Pi+to+two+decimals%3A+%7B%3A.2%7D%22%2C+pi%29%3B%0A%7D)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=c0d0eabc9177e51c62c82d448da8d877)
 
 ## 6. Using `format!` to Store Formatted Strings
 
@@ -168,6 +217,13 @@ println!("{}", greeting);
 This is useful when you need to build strings dynamically or return them from functions.
 
 ▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+main%28%29+%7B%0A++++let+name+%3D+%22Alice%22%3B%0A++++let+greeting+%3D+format%21%28%22Hello%2C+%7Bname%7D%21%22%29%3B%0A++++println%21%28%22%7B%7D%22%2C+greeting%29%3B%0A%7D)
+
+### ✏️ Exercise: Save the Message
+
+Use `format!` to build a greeting string and store it in a variable. Then print that variable using `println!`.
+
+[Solve this exercise](../exercises/getting-started/05_format_variable.rs)
+
 
 ## 7. Output Macros: Summary
 
