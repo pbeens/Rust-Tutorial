@@ -4,4 +4,4 @@ Welcome to the **Rust Tutorial**, a work-in-progress educational resource for le
 
 📘 Start with [`introduction.md`](./main/introduction.md) to get oriented, then move through the lessons in sequence.
 
-Your feedback is welcome — suggestions, corrections, and improvements help make this guide better for everyone.
+Your feedback is welcome — suggestions, corrections, and improvements help make this guide better for everyone. You can share your feedback by opening an issue on the GitHub repository: [github.com/pbeens/Rust-Tutorial/issues](https://github.com/pbeens/Rust-Tutorial/issues).
