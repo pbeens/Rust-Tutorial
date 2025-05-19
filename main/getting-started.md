@@ -196,3 +196,11 @@ Rust provides four key formatting macros:
 | Named arguments               | `{name}`                | `{name}` (Rust 1.58+)            |
 
 These additions clarify how Rust formatting compares to Python’s powerful f-strings while reinforcing Rust's emphasis on compile-time safety and control.
+
+## 9. What's Next?
+
+You've successfully written your first Rust programs, handling output, variables, and basic input. Great job! The next crucial skill is organizing your code for clarity and reusability.
+
+Continue your Rust journey by exploring **Functions**, where you'll learn how to create your own reusable blocks of code.
+
+Ready? Head over to [`functions.md`](./functions.md).
