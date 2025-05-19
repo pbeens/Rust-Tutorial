@@ -82,4 +82,4 @@ Cargo will fetch and compile them automatically.
 
 ## 🧭 What's Next
 
-Now that your setup is complete, start with the first lesson in [`getting-started-code.md`](./getting-started-code.md), and use this file as your central reference for running and building Rust programs.
+Now that your setup is complete, start with the first lesson in [`getting-started.md`](./getting-started.md), and use this file as your central reference for running and building Rust programs.
