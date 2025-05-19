@@ -73,3 +73,9 @@ fn main() {
 - To avoid repeating code
 - To make your logic easier to read and test
 - To isolate behavior for reuse across files
+
+## 6. What's Next?
+
+You've now learned how to define and use functions to organize your code and make it reusable. Great job!
+
+Ready to put those skills to practice and explore how Rust handles numbers, calculations, and common mathematical tasks? Continue your journey by learning about **Teaching Mathematics in Rust** in [`math.md`](./math.md).
