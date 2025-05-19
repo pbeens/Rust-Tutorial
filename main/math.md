@@ -197,3 +197,9 @@ fn square(n: i32) -> i32 {
 ## 17. **Challenges**
 
 * Exercises for the reader
+
+## 18. What's Next?
+
+You've explored how to perform calculations, work with different number types, and use functions for mathematical tasks. That's a solid foundation!
+
+To make your programs more dynamic and capable of handling different situations, the next essential step is learning how to control the flow of execution based on conditions or repeat actions. Continue your journey by exploring **Control Flow (If Statements, Match, and Loops)** in [`control-flow.md`](./control-flow.md).
