@@ -19,8 +19,8 @@ Each concept is introduced with annotated examples, visual guides, and ▶️ Ru
 
 You can start writing Rust code in one of two ways:
 
-1. 🖥 **Install Rust on your local machine**  
-2. 🌐 **Use the Rust Playground in your browser**
+1. 🖥 Install Rust on your local machine 
+2. 🌐 Use the Rust Playground in your browser
 
 📘 For detailed setup instructions, see [`setup.md`](./setup.md)
 
@@ -36,7 +36,7 @@ This repository is organized into:
 
 ## ✅ How to Use This Guide
 
-🧭 **Start with [`getting-started-code.md`](./getting-started-code.md)** to get an overview of the tutorial and setup instructions. Then continue to [`print.md`](./getting-started-code.md) to begin writing your first Rust program. Each file builds upon the last and introduces a new concept, marked with a 🆕 icon the first time it appears.
+🧭 **Start with [`getting-started.md`](./getting-started.md) to write your first Rust program. Each file builds upon the last and introduces a new concept, marked with a 🆕 icon the first time it appears.
 
 Enjoy the journey!
 
