@@ -58,6 +58,15 @@ Use fenced code blocks with `rust`:
 
 ## ✏️ Exercise Conventions
 
+### 🔢 File Naming
+
+- Place each exercise in `exercises/<topic>/`
+- Prefix the file with a two-digit number (e.g. `01_`, `02_`) so they stay in order
+- Use a short snake_case description after the number
+- Numbering restarts within each topic
+- All exercise files use the `.rs` extension
+
+
 ### 🔗 Markdown Embed Format
 
 ```markdown
