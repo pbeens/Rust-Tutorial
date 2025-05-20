@@ -13,7 +13,7 @@ fn main() {
     println!("Hello, world!");
 }
 ```
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+main%28%29+%7B%0D%0A++++println%21%28%22Hello%2C+world%21%22%29%3B%0D%0A%7D)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&code=fn+main%28%29+%7B%0D%0A++++println%21%28%22Hello%2C+world%21%22%29%3B%0D%0A%7D)
 
 If you're curious, you can also explore how "Hello, world!" looks in other programming languages. [[https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)]](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
 
@@ -63,7 +63,7 @@ fn main() {
     println!("{message}");
 }
 ```
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+main%28%29+%7B%0D%0A++++let+message+%3D+%22Hello%2C+world%21%22%3B%0D%0A%0D%0A++++%2F%2F+Traditional+style+%E2%80%94+compatible+with+all+versions+of+Rust%0D%0A++++println%21%28%22%7B%7D%22%2C+message%29%3B%0D%0A%0D%0A++++%2F%2F+Shorthand+style+%E2%80%94+requires+Rust+1.58+or+newer%0D%0A++++println%21%28%22%7Bmessage%7D%22%29%3B%0D%0A%7D)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&code=fn+main%28%29+%7B%0D%0A++++let+message+%3D+%22Hello%2C+world%21%22%3B%0D%0A%0D%0A++++%2F%2F+Traditional+style+%E2%80%94+compatible+with+all+versions+of+Rust%0D%0A++++println%21%28%22%7B%7D%22%2C+message%29%3B%0D%0A%0D%0A++++%2F%2F+Shorthand+style+%E2%80%94+requires+Rust+1.58+or+newer%0D%0A++++println%21%28%22%7Bmessage%7D%22%29%3B%0D%0A%7D)
 
 🆕 This is the first example in the guide that uses **inline comments** (starting with `//`) to annotate the code. Comments will be used throughout the guide to explain syntax choices, version compatibility, and behaviors directly within the code samples.
 
@@ -95,7 +95,7 @@ fn main() {
     println!("Hello, {}!", name);
 }
 ```
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=407a04b6da4238c4068ae063af793a90)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=407a04b6da4238c4068ae063af793a90)
 
 🆕 This is the first time we’ve used an **import** in Rust, which is done using the `use` keyword:
 
@@ -183,7 +183,7 @@ println!("Hello, {} {}!", fname.trim(), lname.trim());
 
 The `.trim()` method removes the newline characters included by `read_line()` so that the names display cleanly.
 
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=e796a9bc9e5735d128185449db6f1151)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=e796a9bc9e5735d128185449db6f1151)
 
 ### ✏️ Exercise: Full Name Flex
 
@@ -202,7 +202,7 @@ println!("Pi to two decimals: {:.2}", pi);
 
 This is equivalent to Python’s `f"{pi:.2f}"`.
 
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=c0d0eabc9177e51c62c82d448da8d877)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=c0d0eabc9177e51c62c82d448da8d877)
 
 ## 6. Using `format!` to Store Formatted Strings
 
@@ -216,7 +216,7 @@ println!("{}", greeting);
 
 This is useful when you need to build strings dynamically or return them from functions.
 
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+main%28%29+%7B%0A++++let+name+%3D+%22Alice%22%3B%0A++++let+greeting+%3D+format%21%28%22Hello%2C+%7Bname%7D%21%22%29%3B%0A++++println%21%28%22%7B%7D%22%2C+greeting%29%3B%0A%7D)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&code=fn+main%28%29+%7B%0A++++let+name+%3D+%22Alice%22%3B%0A++++let+greeting+%3D+format%21%28%22Hello%2C+%7Bname%7D%21%22%29%3B%0A++++println%21%28%22%7B%7D%22%2C+greeting%29%3B%0A%7D)
 
 ### ✏️ Exercise: Save the Message
 

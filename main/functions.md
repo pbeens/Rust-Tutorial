@@ -22,7 +22,7 @@ fn main() {
 }
 ```
 
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+say_hello%28%29+%7B%0A++++println%21%28%22Hello+from+a+function%21%22%29%3B%0A%7D%0A%0Afn+main%28%29+%7B%0A++++say_hello%28%29%3B%0A%7D)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&code=fn+say_hello%28%29+%7B%0A++++println%21%28%22Hello+from+a+function%21%22%29%3B%0A%7D%0A%0Afn+main%28%29+%7B%0A++++say_hello%28%29%3B%0A%7D)
 
 ## 2. Functions with Parameters
 
@@ -40,7 +40,7 @@ fn main() {
 }
 ```
 
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+greet%28name%3A+%26str%29+%7B%0A++++println%21%28%22Hello%2C+%7B%7D%21%22%2C+name%29%3B%0A%7D%0A%0Afn+main%28%29+%7B%0A++++greet%28%22Alice%22%29%3B%0A%7D)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&code=fn+greet%28name%3A+%26str%29+%7B%0A++++println%21%28%22Hello%2C+%7B%7D%21%22%2C+name%29%3B%0A%7D%0A%0Afn+main%28%29+%7B%0A++++greet%28%22Alice%22%29%3B%0A%7D)
 
 ## 3. Functions That Return Values
 
@@ -59,7 +59,7 @@ fn main() {
 }
 ```
 
-▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+square%28n%3A+i32%29+-%3E+i32+%7B%0A++++n+*+n%0A%7D%0A%0Afn+main%28%29+%7B%0A++++let+result+%3D+square%284%29%3B%0A++++println%21%28%224+squared+is+%7B%7D%22%2C+result%29%3B%0A%7D)
+▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&code=fn+square%28n%3A+i32%29+-%3E+i32+%7B%0A++++n+*+n%0A%7D%0A%0Afn+main%28%29+%7B%0A++++let+result+%3D+square%284%29%3B%0A++++println%21%28%224+squared+is+%7B%7D%22%2C+result%29%3B%0A%7D)
 
 ## 4. Notes on Return Types
 

@@ -38,7 +38,7 @@ fn main() {
 
 This simplifies your main logic and avoids boilerplate code.
 
-👉 [Run this example in the Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=use+std%3A%3Aio%3A%3A%7Bself%2C+Write%7D%3B%0A%0Afn+input%28prompt%3A+%26str%29+-%3E+String+%7B%0A++++print%21%28%22%7B%7D%22%2C+prompt%29%3B%0A++++io%3A%3Astdout%28%29.flush%28%29.unwrap%28%29%3B%0A%0A++++let+mut+buffer+%3D+String%3A%3Anew%28%29%3B%0A++++io%3A%3Astdin%28%29.read_line%28%26mut+buffer%29.unwrap%28%29%3B%0A++++buffer.trim%28%29.to_string%28%29%0A%7D%0A%0Afn+main%28%29+%7B%0A++++let+name+%3D+input%28%22What+is+your+name%3F+%22%29%3B%0A++++println%21%28%22Hello%2C+%7Bname%7D%21%22%29%3B%0A%7D)
+👉 [Run this example in the Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&code=use+std%3A%3Aio%3A%3A%7Bself%2C+Write%7D%3B%0A%0Afn+input%28prompt%3A+%26str%29+-%3E+String+%7B%0A++++print%21%28%22%7B%7D%22%2C+prompt%29%3B%0A++++io%3A%3Astdout%28%29.flush%28%29.unwrap%28%29%3B%0A%0A++++let+mut+buffer+%3D+String%3A%3Anew%28%29%3B%0A++++io%3A%3Astdin%28%29.read_line%28%26mut+buffer%29.unwrap%28%29%3B%0A++++buffer.trim%28%29.to_string%28%29%0A%7D%0A%0Afn+main%28%29+%7B%0A++++let+name+%3D+input%28%22What+is+your+name%3F+%22%29%3B%0A++++println%21%28%22Hello%2C+%7Bname%7D%21%22%29%3B%0A%7D)
 
 ## 4. Common Extensions
 

@@ -3,7 +3,7 @@
 // OR change the final output to print in "Last, First" format.
 //
 // ▶️ Run in Playground:
-// https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=1548445aa86f6938036cf68c738606a2
+// https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=1548445aa86f6938036cf68c738606a2
 
 use std::io;
 

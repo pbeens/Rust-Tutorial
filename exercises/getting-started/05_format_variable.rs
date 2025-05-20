@@ -3,7 +3,7 @@
 // Then print that variable using `println!`.
 //
 // ▶️ Run in Playground:
-// https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=b8ca149db3033e1d60008e4f14470815
+// https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=b8ca149db3033e1d60008e4f14470815
 
 fn main() {
     let name = "Anika";

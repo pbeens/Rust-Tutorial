@@ -3,7 +3,7 @@
 // "It's great to meet you, Anika!"
 //
 // ▶️ Run in Playground:
-// https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=b43435813f8f0d463f41ebd926c3f3a7
+// https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=b43435813f8f0d463f41ebd926c3f3a7
 
 use std::io;
 
