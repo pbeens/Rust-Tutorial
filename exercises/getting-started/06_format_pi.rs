@@ -7,5 +7,6 @@
 
 fn main() {
     let pi = 3.14159;
+    // TODO: update this line to format `pi` with three decimal places
     println!("Pi is", pi);
 }
