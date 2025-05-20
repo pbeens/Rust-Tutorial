@@ -222,7 +222,7 @@ This is useful when you need to build strings dynamically or return them from fu
 
 Use `format!` to build a greeting string and store it in a variable. Then print that variable using `println!`.
 
-[Solve this exercise](../exercises/getting-started/05_format_variable.rs)
+[Solve this exercise](../exercises/getting-started/06_format_variable.rs)
 
 
 ## 7. Output Macros: Summary
