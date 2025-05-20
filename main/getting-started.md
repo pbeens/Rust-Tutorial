@@ -204,6 +204,12 @@ This is equivalent to Python’s `f"{pi:.2f}"`.
 
 ▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=c0d0eabc9177e51c62c82d448da8d877)
 
+### ✏️ Exercise: Round Pi
+
+Use the `{:.3}` format specifier to print the value of `pi` rounded to three decimal places.
+
+[Solve this exercise](../exercises/getting-started/06_format_pi.rs)
+
 ## 6. Using `format!` to Store Formatted Strings
 
 The `format!` macro creates a `String` instead of printing it:
