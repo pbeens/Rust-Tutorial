@@ -1,2 +1,2 @@
-Write a function called `double` that takes an `i32` and returns twice its value.  
-Call it from `main()` with a few test values.
+Write a function `say_hello_twice` that prints "Hello!" two times using `println!`.
+Call it from `main()`.

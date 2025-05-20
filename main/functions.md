@@ -22,6 +22,13 @@ fn main() {
 }
 ```
 
+
+### ✏️ Exercise: Double Trouble
+
+Write a function `say_hello_twice` that prints `"Hello!"` two times using `println!`. Call it from `main()`.
+
+[Solve this exercise](../exercises/functions/ex_1.md)
+
 ▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+say_hello%28%29+%7B%0A++++println%21%28%22Hello+from+a+function%21%22%29%3B%0A%7D%0A%0Afn+main%28%29+%7B%0A++++say_hello%28%29%3B%0A%7D)
 
 ## 2. Functions with Parameters
@@ -39,6 +46,13 @@ fn main() {
     greet("Alice");
 }
 ```
+
+
+### ✏️ Exercise: Parameter Practice
+
+Write a function `print_sum` that takes two `i32` parameters and prints their sum. Call it from `main()` with different values.
+
+[Solve this exercise](../exercises/functions/ex_2.md)
 
 ▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+greet%28name%3A+%26str%29+%7B%0A++++println%21%28%22Hello%2C+%7B%7D%21%22%2C+name%29%3B%0A%7D%0A%0Afn+main%28%29+%7B%0A++++greet%28%22Alice%22%29%3B%0A%7D)
 
@@ -59,6 +73,13 @@ fn main() {
 }
 ```
 
+
+### ✏️ Exercise: Cube It
+
+Create a function `cube` that returns the cube of an `i32`. Print the cube of several values from `main()`.
+
+[Solve this exercise](../exercises/functions/ex_3.md)
+
 ▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+square%28n%3A+i32%29+-%3E+i32+%7B%0A++++n+*+n%0A%7D%0A%0Afn+main%28%29+%7B%0A++++let+result+%3D+square%284%29%3B%0A++++println%21%28%224+squared+is+%7B%7D%22%2C+result%29%3B%0A%7D)
 
 ## 4. Notes on Return Types
@@ -67,6 +88,12 @@ fn main() {
 * You can use `return` for clarity, but it’s optional in simple cases
 * If your function returns a value, you must use `->` followed by the return type
 * If it doesn't return anything, just leave out the `->` — Rust will assume you're returning “nothing,” written as `()` behind the scenes
+
+### ✏️ Exercise: Add Three
+
+Write a function `add_three` that takes three `i32` values and returns their sum without using `return` or a trailing semicolon. Print the result from `main()`.
+
+[Solve this exercise](../exercises/functions/ex_4.md)
 
 ## 5. Why Use Functions?
 
