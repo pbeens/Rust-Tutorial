@@ -27,7 +27,7 @@ fn main() {
 
 Write a function called `double` that takes an `i32` and returns twice its value. Call it from `main()` with a few test values.
 
-[Solve this exercise](../exercises/functions/ex_1.md)
+[Solve this exercise](../exercises/functions/01_double.rs)
 
 ▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+say_hello%28%29+%7B%0A++++println%21%28%22Hello+from+a+function%21%22%29%3B%0A%7D%0A%0Afn+main%28%29+%7B%0A++++say_hello%28%29%3B%0A%7D)
 
@@ -52,7 +52,7 @@ fn main() {
 
 Write a function `print_sum` that takes two `i32` parameters and prints their sum. Call it from `main()` with different values.
 
-[Solve this exercise](../exercises/functions/ex_2.md)
+[Solve this exercise](../exercises/functions/02_print_sum.rs)
 
 ▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+greet%28name%3A+%26str%29+%7B%0A++++println%21%28%22Hello%2C+%7B%7D%21%22%2C+name%29%3B%0A%7D%0A%0Afn+main%28%29+%7B%0A++++greet%28%22Alice%22%29%3B%0A%7D)
 
@@ -78,7 +78,7 @@ fn main() {
 
 Create a function `cube` that returns the cube of an `i32`. Print the cube of several values from `main()`.
 
-[Solve this exercise](../exercises/functions/ex_3.md)
+[Solve this exercise](../exercises/functions/03_cube.rs)
 
 ▶️ [Run in Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&code=fn+square%28n%3A+i32%29+-%3E+i32+%7B%0A++++n+*+n%0A%7D%0A%0Afn+main%28%29+%7B%0A++++let+result+%3D+square%284%29%3B%0A++++println%21%28%224+squared+is+%7B%7D%22%2C+result%29%3B%0A%7D)
 
@@ -93,7 +93,7 @@ Create a function `cube` that returns the cube of an `i32`. Print the cube of se
 
 Write a function `add_three` that takes three `i32` values and returns their sum without using `return` or a trailing semicolon. Print the result from `main()`.
 
-[Solve this exercise](../exercises/functions/ex_4.md)
+[Solve this exercise](../exercises/functions/04_add_three.rs)
 
 ## 5. Why Use Functions?
 
